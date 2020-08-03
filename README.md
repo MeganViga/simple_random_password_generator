@@ -63,7 +63,7 @@ Output:
 
 2. Not giving Available Strength Options
 ```python
-python Password.py 8 k
+>> python Password.py 8 k
 ```
 Output:
 
