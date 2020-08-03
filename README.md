@@ -69,3 +69,16 @@ Output:
 
 
 ![](images/lms.png)
+
+
+3. Not giving integer as input to length
+```python
+>> python Password.py g l
+```
+Output:
+
+
+![](images/int.png)
+
+
+
