@@ -10,6 +10,12 @@ parser = argparse.ArgumentParser()
 parser.add_argument("length" , help="Give the desired length for password(Minimum-length = 8) ")
 parser.add_argument("strength",help ="Give the strength for password\nl --> low, m --> medium, s --> strong")
 args = parser.parse_args()
+try:
+    int(args.length)
+except:
+    print("\nPLEASE ONLY GIVE INTEGER VALUE FOR LENGTH...\n")
+    os.system(f'cmd /c "python {__file__} -h"')
+    sys.exit();
 if int(args.length) < 8:
     print("\nPLEASE GIVE LENGTH GREATER THAN OR EQUAL TO '8'\n")
     os.system(f'cmd /c "python {__file__} -h"')
